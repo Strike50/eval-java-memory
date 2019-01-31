@@ -305,7 +305,9 @@ public class App {
                 try {
                      response = sc.nextInt();
                     }
-                catch ( InputMismatchException ignored) {}
+                catch ( InputMismatchException e) {
+                    e.getStackTrace();
+                }
                 finally {
                         sc.nextLine();
                 }
